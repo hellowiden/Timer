@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="timerapp">
+        <div class="timeline-container">
+          <div class="timeline" id="timeline"></div>
+        </div>
+      
+        <div class="countdown">
+          <div id="timer">
+            <span id="displayHours" aria-label="Hours">00</span>:
+            <span id="displayMinutes" aria-label="Minutes">00</span>:
+            <span id="displaySeconds" aria-label="Seconds">00</span>
+          </div>
+        </div>
+      
+        <div class="preset-buttons-container">
+          <div class="preset-button" data-minutes="1">1 min</div>
+          <div class="preset-button" data-minutes="5">5 min</div>
+          <div class="preset-button" data-minutes="10">10 min</div>
+          <div class="preset-button" data-minutes="30">30 min</div>
+          <div class="preset-button" data-minutes="60">60 min</div>
+        </div>
+      
+        <div class="countdown-buttons">
+          <button id="startButton" class="start-button" aria-label="Start Countdown"><i class="fas fa-play"></i> Start Countdown</button>
+          <button id="resetButton" class="reset-button" aria-label="Reset"><i class="fas fa-undo"></i> Reset</button>
+        </div>
+      
+        <div class="countdown-overlay" id="countdownOverlay">
+          <div class="overlay-content">
+            <div class="overlay-line"></div>
+            <p> Time's up 🥳 </p>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
